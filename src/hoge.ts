@@ -19,6 +19,17 @@ export class Hoge {
   }
 
   public createForm() {
-    FormApp.create("もくもく会");
+    // const form = FormApp.create("aもくもく会");
+    // form.setDescription('sss');
+    // form.addMultipleChoiceItem()
+    // .setTitle('お持ちのPCのOSは？')
+    // .setChoiceValues(['Windows', 'Mac'])
+    // .setRequired(true);
+
+
+    // form.addListItem()
+    // .setTitle('お住まいの都道府県は？')
+    // .setChoiceValues(['VBA', 'Google Apps Script', 'Python'])
+    // .setRequired(true);
   }
 }
