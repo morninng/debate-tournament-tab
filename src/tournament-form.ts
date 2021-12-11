@@ -3,11 +3,13 @@ const SHEET_NAME_DEBATERS = "debaters";
 const SHEET_NAME_JUDGES = "judges";
 const SHEET_NAME_TEAMS = "teams";
 
-const ROOM_OPTIONS = ['101', '102', '103', '104', '105', '106', '107', '108', '109', '111', '112', '113', '114', '115', '116'];
+const ROOM_OPTIONS = ['101', '102', '103', '104', '105', '106', '107', '108', '109', '111', '112', '113', '114', '115', '116', '117', '118', '119', '120', '121', '122', '123', '124', '125', '126', '127', '128', '129'];
 const ROLES = ['PM', 'LO', 'MG', 'MO', 'LOR', 'PMR'];
 const SCORES = ['65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75', '76', '77', '78', '79', '80', '81', '82', '83', '84', '85'];
 
 
+
+const ROUND = ['1', '2', '3', '4'];
 
 export class TournamentForm {
   constructor() {}
@@ -54,6 +56,11 @@ function createForm( debaters: string[], teams: string[] ,judges: string[]) {
   const form = FormApp.create("HPDU West 2021 Dec ジャッジシート");
   form.setDescription('ジャッジが、試合結果を記載するためのシート');
 
+
+  form.addListItem()
+  .setTitle('ラウンド')
+  .setChoiceValues(ROUND)
+  .setRequired(true);
 
 
   form.addListItem()
