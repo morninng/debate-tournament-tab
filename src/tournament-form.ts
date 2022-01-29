@@ -1,4 +1,7 @@
-const TOURNAMENT_SHEET_URL = "https://docs.google.com/spreadsheets/d/16KRxI0cDLTG9zHmYhq5027pFuDDDOrQ8eKO2jYNl1kA/edit";
+// const TOURNAMENT_SHEET_URL = "https://docs.google.com/spreadsheets/d/16KRxI0cDLTG9zHmYhq5027pFuDDDOrQ8eKO2jYNl1kA/edit";
+
+const TOURNAMENT_SHEET_URL = "https://docs.google.com/spreadsheets/d/1-rYY_mo-z9-epWULz3y3X7y1MZaVTIwwXWohpV7Bjmo/edit#gid=1995254646";
+
 const SHEET_NAME_DEBATERS = "debaters";
 const SHEET_NAME_JUDGES = "judges";
 const SHEET_NAME_TEAMS = "teams";
@@ -9,7 +12,7 @@ const SCORES = ['65', '66', '67', '68', '69', '70', '71', '72', '73', '74', '75'
 
 
 
-const ROUND = ['1', '2', '3', '4'];
+const ROUND = ['1', '2', '3'];
 
 export class TournamentForm {
   constructor() {}
@@ -53,7 +56,7 @@ function getSheetColumnValues(sheetName: string, columnNum: number){
 
 
 function createForm( debaters: string[], teams: string[] ,judges: string[]) {
-  const form = FormApp.create("HPDU West 2021 Dec ジャッジシート");
+  const form = FormApp.create("NGGL 2022 ディベート ジャッジシート");
   form.setDescription('ジャッジが、試合結果を記載するためのシート');
 
 

@@ -1,4 +1,5 @@
-const TOURNAMENT_SHEET_URL = "https://docs.google.com/spreadsheets/d/16KRxI0cDLTG9zHmYhq5027pFuDDDOrQ8eKO2jYNl1kA/edit";
+// const TOURNAMENT_SHEET_URL = "https://docs.google.com/spreadsheets/d/16KRxI0cDLTG9zHmYhq5027pFuDDDOrQ8eKO2jYNl1kA/edit";
+const TOURNAMENT_SHEET_URL = "https://docs.google.com/spreadsheets/d/1-rYY_mo-z9-epWULz3y3X7y1MZaVTIwwXWohpV7Bjmo/edit#gid=820070216";
 const SHEET_NAME_DEBATERS = "debaters";
 const SHEET_NAME_JUDGES = "judges";
 const SHEET_NAME_TEAMS = "teams";
@@ -21,8 +22,8 @@ export class Allocation {
     const body = table.slice(1, table.length);
     console.log("body", body);
     let tableString = ""
-    const headerString = `|${header[0]}  |${header[1]}   |${header[2]}   |\n`
-    const middleString = `|---|---|---|\n`
+    const headerString = `|${header[0]}  |${header[1]}   |${header[2]}  |${header[3]}   |\n`
+    const middleString = `|---|---|---|---|\n`
     tableString = headerString + middleString
 
     body.forEach((room, index)=>{
@@ -30,9 +31,9 @@ export class Allocation {
       let body_each = ``
 
       if(index % 2 === 0){
-        body_each = `|${room[0]}  |${room[1]}   |${room[2]}   |\n`
+        body_each = `|${room[0]}  |${room[1]}   |${room[2]}   |${room[3]}   |\n`
       }else{
-        body_each = `|\`${room[0]}\`  |\`${room[1]}\`   |\`${room[2]}\`   |\n`
+        body_each = `|\`${room[0]}\`  |\`${room[1]}\`   |\`${room[2]}\`   |\`${room[3]}\`   |\n`
       }
 
       console.log(body_each);
