@@ -119,6 +119,15 @@ function createForm( debaters: string[], teams: string[] ,judges: string[]) {
 
     })
 
+
+    form.addParagraphTextItem ()
+    .setTitle(`Governmentへのフィードバック`);
+
+    form.addParagraphTextItem ()
+    .setTitle(`Oppositionへのフィードバック`);
+
+
+
   }
 
 
